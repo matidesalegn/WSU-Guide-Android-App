@@ -1,0 +1,45 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:defaultValue="@string/default_display_name"
+            app:key="user_display_name"
+            app:maxLines="1"
+            app:singleLine="true"
+            app:title="Display Name"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="Your Email"
+            app:key="user_email_address"
+            app:singleLine="true"
+            app:title="@string/pref_title_email_address" />
+
+        <ListPreference
+            app:defaultValue="@string/pref_default_favorite_social"
+            app:entries="@array/pref_entries_favorite_social"
+            app:entryValues="@array/pref_values_favorite_social"
+            app:key="user_favorite_social"
+            app:negativeButtonText="@null"
+            app:positiveButtonText="@null"
+            app:title="@string/pref_title_favorite_social" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/home" android:title="@string/home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item android:id="@+id/map_guide" android:title="WSU Map Guide"
+            android:icon="@drawable/ic_baseline_location_on_24"/>
+
+        <item android:id="@+id/website" android:title="Website"
+            android:icon="@drawable/ic_baseline_search_24"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/authenticate">
+            <menu>
+                <group>
+                    <item android:id="@+id/login" android:title="E-student"
+                        android:icon="@drawable/ic_baseline_supervised_user_circle_24"/>
+                    <item android:id="@+id/opac" android:title="E-Learning(OPAC)"
+                        android:icon="@drawable/ic_baseline_library_books_24"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/communicate">
+            <menu>
+                <group>
+                    <item android:id="@+id/feedback" android:title="Feedback"
+                        android:icon="@drawable/ic_baseline_feedback_24"/>
+                    <item android:id="@+id/help" android:title="Help And Support"
+                        android:icon="@drawable/ic_baseline_help_24"/>
+                    <item android:id="@+id/share" android:title="Share this App"
+                        android:icon="@drawable/ic_baseline_share_24"/>
+                    <item android:id="@+id/about_app" android:title="About App"
+                        android:icon="@drawable/ic_baseline_info_24"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="WSU Social Media Links">
+            <menu>
+                <group>
+                    <item android:id="@+id/facebook" android:title="Facebook"
+                        android:icon="@drawable/facebook"/>
+                    <item android:id="@+id/telegram" android:title="Telegram"
+                        android:icon="@drawable/telegram"/>
+                    <item android:id="@+id/twitter" android:title="Twitter"
+                        android:icon="@drawable/twitter"/>
+                    <item android:id="@+id/linkedin" android:title="LinkedIn"
+                        android:icon="@drawable/linkedin"/>
+                    <item android:id="@+id/youtube" android:title="YouTube"
+                        android:icon="@drawable/youtube"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

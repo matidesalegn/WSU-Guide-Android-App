@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainCampus" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/gate"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/soodoo" />
+
+                        <TextView
+                            android:id="@+id/txtgate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gate"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Entrance Gates"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btngate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="gate" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/headOffice"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/headoffice" />
+                        <TextView
+                            android:id="@+id/txtheadOffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/headOffice"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Head Office"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnheadOffice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="headOffice" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cafeteria"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/maincampus" />
+
+                        <TextView
+                            android:id="@+id/txtcafeteria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cafeteria"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Cafeteria"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btncafeteria"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="cafeteria" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/dormitory"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/technocampus" />
+                        <TextView
+                            android:id="@+id/txtdormitory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dormitory"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Dormitory"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btndormitory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="dormitory" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/libraries"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/otonacampus" />
+                        <TextView
+                            android:id="@+id/txtlibraries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/libraries"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Libraries"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnlibraries"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="libraries" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/lounges"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/lounges" />
+                        <TextView
+                            android:id="@+id/txtlounges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lounges"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Lounges"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnlounges"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="lounges" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/classRoom"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/otonacampus" />
+
+                                <TextView
+                                    android:id="@+id/txtclassRoom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/classRoom"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Class Rooms"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnclassRoom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="classRoom" />
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/department"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/dawrotercha" />
+
+                                <TextView
+                                    android:id="@+id/txtdepartment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/department"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Collages"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btndepartment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="department" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/service"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/dawrotercha" />
+                                <TextView
+                                    android:id="@+id/txtservice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/service"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Students Service"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnservice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="service" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/registrar"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="TODO"
+                                    android:src="@drawable/registrar" />
+
+                                <TextView
+                                    android:id="@+id/txtregistrar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/registrar"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Registrar"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnregistrar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="registrar" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/hall"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/hall" />
+
+                        <TextView
+                            android:id="@+id/txthall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/hall"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Graduation Hall "
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnhall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="hall" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ictc"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ictc" />
+                        <TextView
+                            android:id="@+id/txtictc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ictc"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="ICT Center"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnictc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="ictc" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/clinic"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/otonacampus" />
+                                <TextView
+                                    android:id="@+id/txtclinic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/clinic"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Campus Clinic"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnclinic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="clinic" />
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/police"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/technocampus" />
+                                <TextView
+                                    android:id="@+id/txtpolice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/police"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Campus Police"
+                                    android:textColor="#000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnpolice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="police" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

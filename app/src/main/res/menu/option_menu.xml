@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/blocksList"
+            android:title="WSU Blocks"
+            app:showAsAction="never|ifRoom|withText"
+            android:icon="@drawable/blocks"/>
+        <item
+            android:id="@+id/info"
+            android:title="WSU Info"
+            app:showAsAction="never|ifRoom|withText"
+            android:icon="@drawable/info"/>
+    </group>
+</menu>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">WSU-Guide</string>
+    <string name="wsudoor">wsudoor</string>
+    <string name="menu_Open">Open</string>
+    <string name="menu_Close">Close</string>
+    <string name="share">Share</string>
+    <string name="donate">Donate</string>
+    <string name="communicate">Communicate</string>
+    <string name="settings">Settings</string>
+    <string name="profiles">Profiles</string>
+    <string name="users">Users</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="login">Login</string>
+    <string name="text1">Welcome To Wolaita Sodo University</string>
+    <string name="todo">TODO</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_note_list">NoteListActivity</string>
+    <string name="title_activity_note">Edit Note</string>
+    <string name="note_title_hint">Note title</string>
+    <string name="note_text_hint">Note text</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="default_display_name">Your Name</string>
+    <string name="pref_title_email_address">Email address</string>
+    <string name="pref_title_favorite_social">Favorite social network</string>
+    <string-array name="pref_entries_favorite_social">
+        <item>Google+</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+    <string-array name="pref_values_favorite_social">
+        <item>http://plus.google.com</item>
+        <item>http://facebook.com</item>
+        <item>http://twitter.com</item>
+    </string-array>
+    <string name="pref_default_favorite_social">http://plus.google.com</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_email_address">Email Address</string>
+    <string name="wsuInfo">Wolaita Sodo University (WSU) is one of the second-generation public higher institutions in Ethiopia, located in Wolaita Sodo town, 315 km away from the capital Addis Ababa. The university was established on March 24, 2007 G.C. It has been commenced teaching and learning process by ending its first batch of 801 (609 males and 192 females) students under four facilities and 16 departments.  In the past decades, remarkable and multifarious progress has been registered in terms of quality education delivery, program diversification, campus expansion, and in conducting multi-disciplinary research activities. At the end of 2017 G.C. WSU has colorfully celebrated its 10th year anniversary with all the campus community and stakeholders. WSU is a multi-campus university functioning in four premises (Gandaba campus, Otona campus, Boditti and Tercha campus). The university has also made its own impeccable efforts in extensive renovation and expansion of works to create intellectually stimulating and enabling environment for teaching, learning and research endeavors.  WSU is committed to provide undergraduate, graduate and other specialty programs that enable students to attain their fullest potential intellectually, ethically and morally. Currently, 58 undergraduate and 43 graduate programs including five doctorate (PhD) degree programs are running under six colleges and four schools. The university delivers courses in regular, evening, weekend and summer modalities. Students’ enrollment in all programs has shown increment and reaches over 30,000 in 2018/19 G.C.  During 2017/18 academic year, the academic staff composition is boosted to1313, and over 3113 administrative staff population are voraciously striving to achieve institutional goals. In the previous years, the university also graduated over 24, 000 alumni in undergraduate and graduate programs.  As its core mission, WSU involved in divergent mainstreaming research and community services and has gained record of significant achievements. So far, the university has published and disseminated three proceedings and hosted six successive research conferences that points towards sustainable socio-economic development of the country. WSU established six research centers aiming to create a platform for practical teaching and multi-disciplinary researches.  Laying claim to a global mindset, the university actively partners with other leading higher education institutions and industries partners around the world to provide international opportunities to its students and staffs.  “Knowledge in Action | እውቀት በተግባር ” Motto of Wolaita Sodo University</string>
+    <string name="report_a_bug">Report a bug</string>
+
+</resources>

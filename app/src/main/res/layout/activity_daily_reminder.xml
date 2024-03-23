@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyReminder">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Reminder App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a reminder"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextReminder"
+            android:layout_below="@+id/textViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter reminder"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_below="@+id/editTextReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select date"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/buttonPickDate"
+            android:layout_below="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/buttonSetReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonPickDate"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="Set reminder" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSetReminder"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
